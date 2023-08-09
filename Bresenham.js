@@ -33,7 +33,7 @@ function logic_bresenham(x0, y0, x1, y1) {
     const ysign = y1 - y0 > 0 ? 1 : -1;
 
     const xx = (dx > dy)*xsign;  // Magnitude comparator OU Substractor
-    const xy = (!(dx > dy))*ysign;  // Les * Sont dess AND généraux.
+    const xy = (!(dx > dy))*ysign;  // Les * Sont des AND généraux.
     const yx = (!(dx > dy))*xsign;  // Dans l'idée , générer le code optimisé de l'addition
     const yy = (dx > dy)*ysign;  // Invalide pour le cas égal lors des inférieurs
     // Dans l'idée , générer le code optimisé de l'addition
