@@ -24,6 +24,7 @@ function logic_bresenham(x0, y0, x1, y1) {
      * @param {Module} abs valeur absolue de x
      * @param {Module} min valeur la plus petite entre A et B
      * @param {Module} max valeur la plus grande entre A et B
+     * @param {Module} * multiplication de A et B
     */
 
     const dx = Math.abs(x1 - x0);
