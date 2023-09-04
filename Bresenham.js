@@ -25,6 +25,12 @@ function logic_bresenham(x0, y0, x1, y1) {
      * @param {Module} min valeur la plus petite entre A et B
      * @param {Module} max valeur la plus grande entre A et B
      * @param {Module} * multiplication de A et B
+     *
+     *
+     * @param {Final} xx = (dx > dy)*xsign    = (Math.abs(x1 - x0) > Math.abs(y1 - y0)) * (x1 - x0 > 0 ? 1 : -1)
+     * @param {Final} xy = (!(dx > dy))*ysign = !(Math.abs(x1 - x0) > Math.abs(y1 - y0)) * (y1 - y0 > 0 ? 1 : -1)
+     * @param {Final} yx = (!(dx > dy))*xsign = !(Math.abs(x1 - x0) > Math.abs(y1 - y0)) * (x1 - x0 > 0 ? 1 : -1)
+     * @param {Final} yy = (dx > dy)*ysign    = (Math.abs(x1 - x0) > Math.abs(y1 - y0)) * (y1 - y0 > 0 ? 1 : -1)
     */
 
     const dx = Math.abs(x1 - x0);
